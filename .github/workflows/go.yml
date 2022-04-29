@@ -16,7 +16,7 @@ jobs:
         image: postgres:12
         env:
           POSTGRES_PASSWORD: pass
-          POSTGRES+DB: simple_bank
+          POSTGRES_DB: simple_bank
         options: >-
           --health_command pg_isready
           --health_interval: 10s
