@@ -69,7 +69,7 @@ const getAccountForUpdate = `-- name: GetAccountForUpdate :one
 SELECT id, owner, balance, currency, created_at
 FROM accounts
 WHERE id = $1 LIMIT 1
-FOR
+FOR NO KEY
 UPDATE
 `
 
